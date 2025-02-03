@@ -60,7 +60,8 @@ body
 
 #mainmenu ul li
 {
-	display: inline;
+	display: inline-block; /* Changed from inline to inline-block */
+	position: relative; /* Added for dropdown positioning */
 }
 
 #mainmenu ul li a
@@ -78,6 +79,46 @@ body
 	color: #6399cd;
 	background-color:#EFF4FA;
 	text-decoration:none;
+}
+
+/* Dropdown menu styles */
+#mainmenu ul li ul
+{
+	display: none; /* Hide dropdown by default */
+	position: absolute;
+	top: 100%; /* Position below the parent menu item */
+	left: 0;
+	background: #EFF4FA; /* Background color for dropdown */
+	border: 1px solid #C9E0ED; /* Border for dropdown */
+	padding: 0;
+	margin: 0;
+	z-index: 1000; /* Ensure dropdown appears above other content */
+}
+
+#mainmenu ul li ul li
+{
+	display: block; /* Display dropdown items vertically */
+	width: 140px; /* Set width of dropdown */
+	padding: 0px 0; /* Added more space between dropdown items */
+}
+
+#mainmenu ul li ul li a
+{
+	color: #555; /* Text color for dropdown items */
+	padding: 8px 10px; /* Padding for dropdown items */
+	background: #EFF4FA; /* Background color for dropdown items */
+	display: block; /* Ensure the entire area is clickable */
+}
+
+#mainmenu ul li ul li a:hover
+{
+	background: #C9E0ED; /* Hover background color for dropdown items */
+	color: #6399cd; /* Hover text color for dropdown items */
+}
+
+#mainmenu ul li:hover ul
+{
+	display: block; /* Show dropdown on hover */
 }
 
 div.flash-error, div.flash-notice, div.flash-success

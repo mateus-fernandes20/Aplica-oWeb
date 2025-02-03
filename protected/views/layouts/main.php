@@ -30,7 +30,22 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'Passageiros', 'url'=>array('/site/pagina')),
+				array(
+					'label'=>'Passageiros', 
+					'url'=> '#',
+					'items'=>array(
+						array('label'=>'Listar Passageiros', 'url'=>array('/site/passageiros')),
+						array('label'=>'Criar Passageiros', 'url'=>array('/site/passageiros')),
+					),
+				),
+				array(
+					'label'=>'Motoristas', 
+					'url'=> '#',
+					'items'=>array(
+						array('label'=>'Listar Motoristas', 'url'=>array('/site/passageiros')),
+						array('label'=>'Criar Motoristas', 'url'=>array('/site/passageiros')),
+					),
+				),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
