@@ -26,10 +26,61 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'nascimento'); ?>
-		<?php echo $form->textField($model,'nascimento'); ?>
-		<?php echo $form->error($model,'nascimento'); ?>
+    <?php echo $form->labelEx($model, 'nascimento'); ?>
+
+    <div class="input-container">
+        <?php 
+        $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+            'model' => $model,
+            'attribute' => 'nascimento',
+            'options' => array(
+                'dateFormat' => 'yy-mm-dd',
+                'changeYear' => true,
+                'changeMonth' => true,
+                'yearRange' => '1900:' . date('Y'),
+                'showAnim' => 'fadeIn',
+            ),
+            'htmlOptions' => array(
+                'size' => 10,
+                'maxlength' => 10,
+                'class' => 'date-input',
+            ),
+        ));
+        ?>
+
+        <i class="fa fa-calendar calendar-icon"></i>
+    </div>
+
+    <?php echo $form->error($model, 'nascimento'); ?>
 	</div>
+
+	<style>
+		.input-container {
+			position: relative;
+			display: inline-block;
+		}
+
+		.date-input {
+			padding-right: 30px;
+		}
+
+		.calendar-icon {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			color: #555;
+		}
+	</style>
+
+	<script>
+		$(document).ready(function() {
+			$(".calendar-icon").click(function() {
+				$("#<?php echo CHtml::activeId($model, 'nascimento'); ?>").focus();
+			});
+		});
+	</script>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>

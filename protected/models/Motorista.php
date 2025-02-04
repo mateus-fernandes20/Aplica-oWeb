@@ -32,6 +32,11 @@ class Motorista extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nome, nascimento, email, telefone, stats', 'required'),
+			array('nome', 'match', 'pattern' => '/^(?=[A-Za-zÀ-ÖØ-öø-ÿ]{3,} [A-Za-zÀ-ÖØ-öø-ÿ]{3,}$)[A-Za-zÀ-ÖØ-öø-ÿ ]+$/', 'message' => 'Nome deve conter duas partes com mínimo de 3 caracteres para cada parte.'),
+			array('email', 'email', 'message' => 'Email inválido.'),
+			array('telefone', 'match', 'pattern' => '/^\+\d{2}-\d{2}-9\d{8}$/', 'message' => 'Telefone inválido. Use +xx-xx-9xxxxxxxx'),
+			array('stats', 'match', 'pattern' => '/^[AI]$/', 'message' => 'Stats must be either "A" or "I".'),
+			array('placa', 'match', 'pattern' => '/^[A-Z0-9]{7}$|^[A-Z]{3}-\d{4}$/', 'message' => 'Placa must be in the correct format (e.g., ABC-1234 or 1234567).'),
 			array('nome, email', 'length', 'max'=>100),
 			array('telefone', 'length', 'max'=>20),
 			array('stats', 'length', 'max'=>1),
@@ -40,7 +45,7 @@ class Motorista extends CActiveRecord
 			array('status_tempo', 'safe', 'on' => 'insert'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('nome, nascimento, email, telefone, stats, status_tempo, placa, obs', 'safe', 'on'=>'search'),
+			array('nome, nascimento, email, telefone, stats, status_tempo, obs', 'safe', 'on'=>'search'),
 		);
 	}
 
