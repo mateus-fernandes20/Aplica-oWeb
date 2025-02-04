@@ -34,16 +34,18 @@
 					'label'=>'Passageiros', 
 					'url'=> '#',
 					'items'=>array(
-						array('label'=>'Listar Passageiros', 'url'=>array('/site/passageiros_listar')),
-						array('label'=>'Criar Passageiros', 'url'=>array('/site/passageiros_criar')),
+						array('label'=>'Listar Passageiros', 'url'=>'/index.php?r=passageiro'),
+						array('label'=>'Criar Passageiros', 'url'=>'/index.php?r=passageiro/create'),
+						array('label'=>'Gerenciar Passageiros', 'url'=>'/index.php?r=passageiro/admin'),
 					),
 				),
 				array(
 					'label'=>'Motoristas', 
 					'url'=> '#',
 					'items'=>array(
-						array('label'=>'Listar Motoristas', 'url'=>array('/site/passageiros')),
-						array('label'=>'Criar Motoristas', 'url'=>array('/site/passageiros')),
+						array('label'=>'Listar Motoristas', 'url'=>'/index.php?r=motorista'),
+						array('label'=>'Criar Motoristas', 'url'=>'/index.php?r=motorista/create'),
+						array('label'=>'Gerenciar Motoristas', 'url'=>'/index.php?r=motorista/admin'),
 					),
 				),
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),

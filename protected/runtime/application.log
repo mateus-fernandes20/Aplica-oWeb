@@ -5514,3 +5514,456 @@ HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
 2025/02/04 19:05:18 [warning] [application] Failed to set unsafe attribute "status_tempo" of "Passageiro".
 in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (96)
 in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 19:13:54 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiros_listar". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiros_lis...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiros_lis...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiros_listar
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---
+2025/02/04 19:13:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiros_listar". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiros_lis...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiros_lis...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiros_listar
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---
+2025/02/04 19:13:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiros_listar". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiros_lis...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiros_lis...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiros_listar
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---
+2025/02/04 19:13:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "../../models/passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('../../models/pa...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=../../models/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---
+2025/02/04 19:14:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "../../models/passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('../../models/pa...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=../../models/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---
+2025/02/04 19:14:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "../../models/passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('../../models/pa...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=../../models/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---
+2025/02/04 19:14:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "../../models/passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('../../models/pa...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=../../models/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---
+2025/02/04 19:14:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "/models/passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('/models/passage...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=/models/passageiro
+---
+2025/02/04 19:14:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "models/passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('models/passagei...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=models/passageiro
+---
+2025/02/04 19:14:45 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/pass...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=passageiro/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro
+---
+2025/02/04 19:14:51 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2025/02/04 19:15:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "http://localhost:8888/index.php?r=site/index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('http://localhos...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=http://localhost:8888/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2025/02/04 19:15:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "http://localhost:8888/index.php?r=site/index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('http://localhos...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=http://localhost:8888/index.php?r=site/index
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2025/02/04 19:15:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2025/02/04 19:15:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2025/02/04 19:16:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/pass...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=passageiro/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro
+---
+2025/02/04 19:16:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "../passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('../passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=../passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2025/02/04 19:16:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=index
+---
+2025/02/04 19:16:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:17:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "models/passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('models/passagei...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=models/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?
+---
+2025/02/04 19:17:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "models/Passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('models/Passagei...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=models/Passageiro
+HTTP_REFERER=http://localhost:8888/index.php?
+---
+2025/02/04 19:17:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "models/Passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('models/Passagei...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=models/Passageiro
+HTTP_REFERER=http://localhost:8888/index.php?
+---
+2025/02/04 19:17:29 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "models/Passageiro.php". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('models/Passagei...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=models/Passageiro.php
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:18:08 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/pass...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=passageiro/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro
+---
+2025/02/04 19:18:15 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:18:50 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:18:54 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:07 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:07 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:07 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:08 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:08 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:08 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "C:\Users\jotaf\desafio\protected\views\layoutspassageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('C:\\Users\\jotaf\\...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('C:\\Users\\jotaf\\...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/C:\\Users\\j...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/C:\Users\jotaf\desafio\protected\views\layoutspassageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:19:10 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:20:40 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:22:11 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:22:21 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiros_criar". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiros_cri...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiros_cri...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiros_criar
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:23:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "?r=passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('?r=passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('?r=passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/?r=passage...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/?r=passageiro
+HTTP_REFERER=http://localhost:8888/index.php?r=site/index
+---
+2025/02/04 19:23:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "?r=passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('?r=passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('?r=passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/?r=passage...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/?r=passageiro
+HTTP_REFERER=http://localhost:8888/index.php
+---
+2025/02/04 19:24:36 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index.php?
+---
+2025/02/04 19:25:40 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index
+---
+2025/02/04 19:26:42 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiro". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiro')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiro')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiro
+HTTP_REFERER=http://localhost:8888/index
+---
+2025/02/04 19:27:56 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiros_criar". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiros_cri...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiros_cri...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiros_criar
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro
+---
