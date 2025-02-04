@@ -34,8 +34,8 @@
 					'label'=>'Passageiros', 
 					'url'=> '#',
 					'items'=>array(
-						array('label'=>'Listar Passageiros', 'url'=>array('/site/passageiros')),
-						array('label'=>'Criar Passageiros', 'url'=>array('/site/passageiros')),
+						array('label'=>'Listar Passageiros', 'url'=>array('/site/passageiros_listar')),
+						array('label'=>'Criar Passageiros', 'url'=>array('/site/passageiros_criar')),
 					),
 				),
 				array(
