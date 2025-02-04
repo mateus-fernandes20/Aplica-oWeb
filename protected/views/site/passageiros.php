@@ -18,10 +18,18 @@ $this->breadcrumbs=array(
 		$results = $command->queryAll();
     ?>
 
-    <?php
-    	// Display the result
-		foreach($results as $result) {?>
-    		<li><?php echo "Database connection is working! Result: " . $result['nome'] . "<br>";?></li>
-        <?php	}
-    ?>
+    <?php foreach($results as $result) {?>
+    		<h3>
+                <li>
+                    <?php echo $result['nome'] . "<br>";?>
+                </li>
+            </h3>
+            <ul>
+                <li><?php echo "Data de nascimento: " . $result['nascimento'] . "<br>";?></li>
+                <li><?php echo "Email: " . $result['email'] . "<br>";?></li>
+                <li><?php echo "Telefone: " . $result['telefone'] . "<br>";?></li>
+                <li><?php echo "Status: " . $result['stats'] . "<br>";?></li>
+                <li><?php echo "Obs: " . $result['obs'] . "<br>";?></li>
+            </ul>
+        <?php } ?>
 

@@ -2371,3 +2371,147 @@ Stack trace:
 REQUEST_URI=/index.php?r=site/passageiros
 HTTP_REFERER=http://localhost:8888/
 ---
+2025/02/04 12:48:57 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
+2025/02/04 12:49:01 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
+2025/02/04 12:49:03 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
+2025/02/04 12:49:04 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
+2025/02/04 12:49:04 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
+2025/02/04 12:49:08 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
+2025/02/04 12:49:08 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
+2025/02/04 12:49:09 [error] [exception.ParseError] ParseError: Unclosed '{' on line 21 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php:27
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): CBaseController->renderInternal()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): CBaseController->renderFile()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial()
+#3 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(39): CController->render()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionPassageiros()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=site/passageiros
+HTTP_REFERER=http://localhost:8888/index.php?r=site/passageiros
+---
