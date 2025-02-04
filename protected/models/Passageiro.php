@@ -51,7 +51,10 @@ class Passageiro extends CActiveRecord
         if ($this->isNewRecord) {
 			$this->stats = 'A';
             $this->status_tempo = new CDbExpression('CURRENT_TIMESTAMP');
-        }
+        } else {
+			$this->status_tempo = new CDbExpression('CURRENT_TIMESTAMP');
+		}
+	
         return parent::beforeSave();
     }
 

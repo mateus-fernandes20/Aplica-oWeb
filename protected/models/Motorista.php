@@ -31,7 +31,7 @@ class Motorista extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nome, nascimento, email, telefone, stats', 'required'),
+			array('nome, nascimento, email, telefone, stats, placa', 'required'),
 			array('nome', 'match', 'pattern' => '/^(?=[A-Za-zÀ-ÖØ-öø-ÿ]{3,} [A-Za-zÀ-ÖØ-öø-ÿ]{3,}$)[A-Za-zÀ-ÖØ-öø-ÿ ]+$/', 'message' => 'Nome deve conter duas partes com mínimo de 3 caracteres para cada parte.'),
 			array('email', 'email', 'message' => 'Email inválido.'),
 			array('telefone', 'match', 'pattern' => '/^\+\d{2}-\d{2}-9\d{8}$/', 'message' => 'Telefone inválido. Use +xx-xx-9xxxxxxxx'),
@@ -48,6 +48,17 @@ class Motorista extends CActiveRecord
 			array('nome, nascimento, email, telefone, stats, status_tempo, obs', 'safe', 'on'=>'search'),
 		);
 	}
+
+	public function beforeSave()
+    {
+        if ($this->isNewRecord) {
+			$this->stats = 'A';
+            $this->status_tempo = new CDbExpression('CURRENT_TIMESTAMP');
+        } else {
+			$this->status_tempo = new CDbExpression('CURRENT_TIMESTAMP');
+		}
+        return parent::beforeSave();
+    }
 
 	/**
 	 * @return array relational rules.
