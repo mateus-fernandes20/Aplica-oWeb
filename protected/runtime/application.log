@@ -4398,3 +4398,1119 @@ REQUEST_URI=/index.php?r=site/passageiros
 in C:\Users\jotaf\desafio\protected\views\site\passageiros.php (24)
 in C:\Users\jotaf\desafio\protected\controllers\SiteController.php (39)
 in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:16:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2025/02/04 18:18:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2025/02/04 18:20:04 [error] [exception.CException] CException: SiteController cannot find the requested view "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('gii', NULL, true)
+#1 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(26): CController->render('gii')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionGii()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('gii')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/gii
+---
+2025/02/04 18:22:07 [error] [exception.CException] CException: SiteController cannot find the requested view "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('gii', NULL, true)
+#1 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(26): CController->render('gii')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionGii()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('gii')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/gii
+---
+2025/02/04 18:22:08 [error] [exception.CException] CException: SiteController cannot find the requested view "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('gii', NULL, true)
+#1 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(26): CController->render('gii')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionGii()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('gii')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/gii
+---
+2025/02/04 18:22:09 [error] [exception.CException] CException: SiteController cannot find the requested view "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('gii', NULL, true)
+#1 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(26): CController->render('gii')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionGii()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('gii')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/gii
+---
+2025/02/04 18:22:09 [error] [exception.CException] CException: SiteController cannot find the requested view "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('gii', NULL, true)
+#1 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(26): CController->render('gii')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionGii()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('gii')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/gii
+---
+2025/02/04 18:22:10 [error] [exception.CException] CException: SiteController cannot find the requested view "gii". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:881
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): CController->renderPartial('gii', NULL, true)
+#1 C:\Users\jotaf\desafio\protected\controllers\SiteController.php(26): CController->render('gii')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): SiteController->actionGii()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('gii')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/gii')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/gii
+---
+2025/02/04 18:27:05 [error] [exception.CHttpException.404] CHttpException: Unable to find the code you requested. in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\gii\CCodeGenerator.php:90
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionCode()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('code')
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/code')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/index.php?r=gii/model/code&id=0
+HTTP_REFERER=http://localhost:8888/index.php?r=gii/model/index
+---
+2025/02/04 18:35:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.dias@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros'.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:35:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.dias@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:36:43 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.dias@gmai...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.dias@gmai...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(55): PassageiroController->loadModel('diego.dias@gmai...')
+#6 [internal function]: PassageiroController->actionView('diego.dias@gmai...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/view')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/view&id=diego.dias%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:38:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.dias@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros'.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:38:52 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.dias@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:41:19 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.santos@gm...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.santos@gm...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.santos@gm...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(55): PassageiroController->loadModel('diego.santos@gm...')
+#6 [internal function]: PassageiroController->actionView('diego.santos@gm...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/view')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/view&id=diego.santos%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:41:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6=''.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:41:47 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:43:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6=''.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:43:24 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:47:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros'.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:47:17 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:47:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros'.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:47:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='', :yp6='adoro cachorros' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:48:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'diego.santos@gmail.com' for key 'passageiro.PRIMARY'. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, CURRENT_TIMESTAMP, :yp5). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='adoro cachorros'.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:48:55 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'diego.santos@gmail.com' for key 'passageiro.PRIMARY'. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, CURRENT_TIMESTAMP, :yp5). Bound with :yp0='Diego Santos', :yp1='1999-08-10', :yp2='diego.santos@gmail.com', :yp3='+5521912345678', :yp4='A', :yp5='adoro cachorros' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:49:19 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.dias@gmai...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.dias@gmai...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('diego.dias@gmai...')
+#6 [internal function]: PassageiroController->actionDelete('diego.dias@gmai...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=diego.dias%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:49:25 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.dias@gmai...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.dias@gmai...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('diego.dias@gmai...')
+#6 [internal function]: PassageiroController->actionDelete('diego.dias@gmai...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=diego.dias%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:49:55 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.santos1@g...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.santos1@g...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.santos1@g...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(55): PassageiroController->loadModel('diego.santos1@g...')
+#6 [internal function]: PassageiroController->actionView('diego.santos1@g...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/view')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/view&id=diego.santos1%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:50:20 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.santos1@g...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.santos1@g...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.santos1@g...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('diego.santos1@g...')
+#6 [internal function]: PassageiroController->actionDelete('diego.santos1@g...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=diego.santos1%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:50:30 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.santos@gm...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.santos@gm...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.santos@gm...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(89): PassageiroController->loadModel('diego.santos@gm...')
+#6 [internal function]: PassageiroController->actionUpdate('diego.santos@gm...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('update')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/upda...')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/update&id=diego.santos%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:50:35 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.dias@gmai...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.dias@gmai...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(89): PassageiroController->loadModel('diego.dias@gmai...')
+#6 [internal function]: PassageiroController->actionUpdate('diego.dias@gmai...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('update')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/upda...')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/update&id=diego.dias%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:50:45 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.santos@gm...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.santos@gm...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.santos@gm...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(55): PassageiroController->loadModel('diego.santos@gm...')
+#6 [internal function]: PassageiroController->actionView('diego.santos@gm...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/view')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/view&id=diego.santos%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:51:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6=''.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:51:43 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6='' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:51:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6=''.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:51:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6='' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:52:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6=''.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:52:35 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6='' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:52:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6=''.
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/04 18:52:40 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'status_tempo' at row 1. The SQL statement executed was: INSERT INTO `passageiro` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `status_tempo`, `obs`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6). Bound with :yp0='Carlos Antonio', :yp1='1970-10-10', :yp2='carlos.antonio@gmail.com', :yp3='+551185297413', :yp4='A', :yp5='', :yp6='' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): PassageiroController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/crea...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=passageiro/create
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:52:53 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(55): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionView('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/view')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/view&id=carlos.antonio%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/create
+---
+2025/02/04 18:53:09 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:54:42 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:55:28 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:56:58 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.dias@gmai...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.dias@gmai...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('diego.dias@gmai...')
+#6 [internal function]: PassageiroController->actionDelete('diego.dias@gmai...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=diego.dias%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:57:06 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.santos1@g...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.santos1@g...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.santos1@g...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('diego.santos1@g...')
+#6 [internal function]: PassageiroController->actionDelete('diego.santos1@g...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=diego.santos1%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:57:10 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.dias@gmai...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.dias@gmai...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('diego.dias@gmai...')
+#6 [internal function]: PassageiroController->actionDelete('diego.dias@gmai...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=diego.dias%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:59:19 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(55): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionView('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/view')
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=passageiro/view&id=carlos.antonio%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:59:23 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 18:59:26 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('diego.dias@gmai...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('diego.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('diego.dias@gmai...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('diego.dias@gmai...')
+#6 [internal function]: PassageiroController->actionDelete('diego.dias@gmai...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=diego.dias%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:01:01 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiros_listar". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiros_lis...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiros_lis...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiros_listar
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:01:05 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "passageiros_listar". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('passageiros_lis...')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('passageiros_lis...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('site/passageiro...')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/passageiros_listar
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:01:12 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:01:45 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(155): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:03:03 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(156): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:03:08 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(156): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:03:26 [error] [exception.Error] Error: Call to undefined function mb_stripos() in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php:609
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbConnection.php(581): CDbConnection->quoteValueInternal('carlos.antonio@...', 2)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(790): CDbConnection->quoteValue('carlos.antonio@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\schema\CDbCommandBuilder.php(624): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), 'email', Array, '`t`.')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1493): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#4 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(156): CActiveRecord->findByPk('carlos.antonio@...')
+#5 C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php(113): PassageiroController->loadModel('carlos.antonio@...')
+#6 [internal function]: PassageiroController->actionDelete('carlos.antonio@...')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(PassageiroController), Array)
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PassageiroController), Object(ReflectionMethod), Array)
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1119): CFilterChain->run()
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('delete')
+#21 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('passageiro/dele...')
+#22 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?ajax=passageiro-grid&id=carlos.antonio%40gmail.com&r=passageiro%2Fdelete
+HTTP_REFERER=http://localhost:8888/index.php?r=passageiro/admin
+---
+2025/02/04 19:05:18 [warning] [application] Failed to set unsafe attribute "status_tempo" of "Passageiro".
+in C:\Users\jotaf\desafio\protected\controllers\PassageiroController.php (96)
+in C:\Users\jotaf\desafio\index.php (13)
