@@ -30,5 +30,6 @@ $this->menu=array(
 		'status_tempo',
 		'placa',
 		'obs',
+		'corridas',
 	),
 )); ?>

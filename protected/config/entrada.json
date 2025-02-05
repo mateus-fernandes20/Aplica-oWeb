@@ -1,0 +1,16 @@
+{
+	"passageiro": {
+		"id": 123
+	},
+	"origem": {
+		"endereco": "Rua da Assembleia, 10 - Centro",
+		"lat": -27.0656,
+		"lng": -43.0343
+	},
+	"destino": {
+		"endereco": "Rua Santa Clara, 274 - Copacabana",
+		"lat": -27.333,
+		"lng": -42.9878
+	}
+
+}

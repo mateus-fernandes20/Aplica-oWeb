@@ -23,7 +23,6 @@ class DistanceController extends Controller
 
         $response = curl_exec($ch);
         $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        $curlError = curl_error($ch);
         curl_close($ch);
 
         Yii::log("OpenCage API Response: " . $response, CLogger::LEVEL_INFO, 'application');
@@ -38,7 +37,6 @@ class DistanceController extends Controller
         } else {
             throw new Exception("Error fetching data from OpenCage API. Status code: " . $statusCode);
         }
-
     }
 
     // Calculate distance (Haversine formula)
@@ -55,43 +53,98 @@ class DistanceController extends Controller
     }
 
     public function actionIndex()
-{
-    $model = new DistanceForm();
+    {
+        // Ensure that the response content-type is JSON
+        header('Content-Type: application/json');
 
-    if (isset($_POST['DistanceForm'])) {
-        $model->attributes = $_POST['DistanceForm'];
-
-        if ($model->validate()) {
-            try {
-                $coords1 = $this->getCoordinatesFromOpenCage($model->location1);
-                $coords2 = $this->getCoordinatesFromOpenCage($model->location2);
-
-                if ($coords1 && $coords2) {
-                    $distance = $this->haversine(
-                        $coords1['results'][0]['geometry']['lat'], 
-                        $coords1['results'][0]['geometry']['lng'],
-                        $coords2['results'][0]['geometry']['lat'], 
-                        $coords2['results'][0]['geometry']['lng']
-                    );
-
-                    $model->distance = round($distance, 2);
-                    $model->lat1 = $coords1['results'][0]['geometry']['lat'];
-                    $model->lng1 = $coords1['results'][0]['geometry']['lng'];
-                    $model->lat2 = $coords2['results'][0]['geometry']['lat'];
-                    $model->lng2 = $coords2['results'][0]['geometry']['lng'];
-
-                    Yii::app()->user->setFlash('success', "Distance: {$model->distance} km");
-                } else {
-                    Yii::app()->user->setFlash('error', 'Failed to fetch coordinates. Check your input.');
-                }
-            } catch (Exception $e) {
-                Yii::app()->user->setFlash('error', 'Error: ' . $e->getMessage());
-            }
+        // Read the entrada.json file
+        $jsonFilePath = Yii::getPathOfAlias('application') . '/config/entrada.json';
+        if (!file_exists($jsonFilePath)) {
+            echo json_encode(['sucesso' => false, 'message' => 'entrada.json file not found.']);
+            Yii::app()->end();
         }
+
+        $jsonData = file_get_contents($jsonFilePath);
+        $data = json_decode($jsonData, true);
+
+        if (!$data) {
+            echo json_encode(['sucesso' => false, 'message' => 'Invalid JSON format.']);
+            Yii::app()->end();
+        }
+
+        try {
+            // Extract origin and destination addresses
+            $origem = $data['origem'];
+            $destino = $data['destino'];
+
+            // Get coordinates from OpenCage API
+            $coordsOrigem = $this->getCoordinatesFromOpenCage($origem['endereco']);
+            $coordsDestino = $this->getCoordinatesFromOpenCage($destino['endereco']);
+
+            // Calculate distance (you can replace haversine if necessary)
+            $distance = $this->haversine(
+                $coordsOrigem['results'][0]['geometry']['lat'],
+                $coordsOrigem['results'][0]['geometry']['lng'],
+                $coordsDestino['results'][0]['geometry']['lat'],
+                $coordsDestino['results'][0]['geometry']['lng']
+            );
+
+            // Calculate estimated time in minutes
+            $estimatedTimeInMinutes = round(($distance * 1000) / 200);
+            $estimatedTimeInMinutes += 3;  // Add 3 minutes of fixed time
+
+            if ($estimatedTimeInMinutes > 480) {
+                echo json_encode([
+                    'sucesso' => false,
+                    'message' => 'The estimated time exceeds 8 hours.',
+                ]);
+                Yii::app()->end();
+            }
+
+            $motorista = Motorista::model()->find('Stats = :stats', ['stats' => 'A']);
+
+            if ($motorista === null) {
+                // If no active motorista is found, return an error
+                echo json_encode([
+                    'sucesso' => false,
+                    'message' => 'Nenhum motorista disponível.',
+                ]);
+                Yii::app()->end();
+            }
+
+            // Calculate the arrival time
+            $currentTime = new DateTime();
+            $currentTime->modify("+$estimatedTimeInMinutes minutes");
+            $currentTime->modify("-180 minutes");  // Subtract 180 minutes
+            $formattedTime = $currentTime->format('Y-m-d H:i');
+
+            // Prepare success response
+            $response = [
+                'sucesso' => true,
+                'corrida' => [
+                    'id' => 456,  // Example ID
+                    'previsao_chegada_destino' => $formattedTime,
+                    'previsao_tempo' => $estimatedTimeInMinutes
+                ],
+                'motorista' => [
+                    'nome' => $motorista->nome,
+                    'placa' => $motorista->placa,
+                    'quantidade_corridas' => $motorista->corridas,
+                ],
+            ];
+
+            echo json_encode($response);
+        } catch (Exception $e) {
+            echo json_encode([
+                'sucesso' => false,
+                'message' => 'Error: ' . $e->getMessage()
+            ]);
+        }
+
+        // Terminate the request and avoid any further output
+        Yii::app()->end();
     }
 
-    $this->render('index', array('model' => $model));
 }
 
-}
 ?>

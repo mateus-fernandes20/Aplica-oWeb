@@ -56,6 +56,11 @@
 		<?php echo $form->textField($model,'obs',array('size'=>60,'maxlength'=>200)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'corridas'); ?>
+		<?php echo $form->textField($model,'corridas'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

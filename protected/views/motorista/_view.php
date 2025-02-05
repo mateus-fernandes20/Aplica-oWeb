@@ -37,6 +37,10 @@
 	<?php echo CHtml::encode($data->placa); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('corridas')); ?>:</b>
+	<?php echo CHtml::encode($data->corridas); ?>
+	<br />
+
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('obs')); ?>:</b>
 	<?php echo CHtml::encode($data->obs); ?>

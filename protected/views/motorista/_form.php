@@ -112,6 +112,12 @@
 		<?php echo $form->error($model,'obs'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'corridas'); ?>
+		<?php echo $form->textField($model,'corridas'); ?>
+		<?php echo $form->error($model,'corridas'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

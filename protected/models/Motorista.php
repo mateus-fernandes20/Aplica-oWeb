@@ -44,9 +44,10 @@ class Motorista extends CActiveRecord
 			array('placa', 'length', 'max'=>8),
 			array('obs', 'length', 'max'=>200),
 			array('status_tempo, id', 'safe', 'on' => 'insert'),
+			array('corridas', 'safe', 'on' => 'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, nome, nascimento, email, telefone, stats, status_tempo, obs', 'safe', 'on'=>'search'),
+			array('id, nome, nascimento, email, telefone, stats, status_tempo, obs, corridas', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -79,6 +80,7 @@ class Motorista extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'id' => 'ID',
 			'nome' => 'Nome',
 			'nascimento' => 'Nascimento',
 			'email' => 'Email',
@@ -87,6 +89,7 @@ class Motorista extends CActiveRecord
 			'status_tempo' => 'Status Tempo',
 			'placa' => 'Placa',
 			'obs' => 'Obs',
+			'corridas' => 'Corridas',
 		);
 	}
 
@@ -117,6 +120,7 @@ class Motorista extends CActiveRecord
 		$criteria->compare('status_tempo',$this->status_tempo,true);
 		$criteria->compare('placa',$this->placa,true);
 		$criteria->compare('obs',$this->obs,true);
+		$criteria->compare('corridas',$this->corridas,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
