@@ -6904,3 +6904,575 @@ Stack trace:
 REQUEST_URI=/index.php?r=distance/index
 HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
 ---
+2025/02/05 14:38:52 [error] [php] file_get_contents(https://api.opencagedata.com/geocode/v1/json?q=Rua+Padre+Guerra%2C+1050&amp;key=apiKey): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:8)
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(8): file_get_contents()
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(44): DistanceController->getCoordinates()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (8)
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (44)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 14:38:59 [error] [php] file_get_contents(https://api.opencagedata.com/geocode/v1/json?q=Rua+Padre+Guerra%2C+1050&amp;key=apiKey): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:8)
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(8): file_get_contents()
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(44): DistanceController->getCoordinates()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (8)
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (44)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 15:01:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 15:02:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 15:03:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=distance
+---
+2025/02/05 15:03:19 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=distance/index
+---
+2025/02/05 15:03:20 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php:486
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=distance/index
+---
+2025/02/05 15:04:39 [error] [php] Undefined variable $model (C:\Users\jotaf\desafio\protected\views\distance\index.php:12)
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(126): require()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CBaseController.php(95): DistanceController->renderInternal()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(872): DistanceController->renderFile()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(785): DistanceController->renderPartial()
+#4 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(135): DistanceController->render()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\views\distance\index.php (12)
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (135)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 15:08:40 [error] [exception.ParseError] ParseError: syntax error, unexpected token ";", expecting "function" in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:169
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 15:09:26 [error] [exception.CException] CException: DistanceController and its behaviors do not have a method or closure named "getCoordinates". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(143): CComponent->__call('getCoordinates', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 15:09:49 [error] [exception.CException] CException: CHttpRequest and its behaviors do not have a method or closure named "getHeaders". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(50): CComponent->__call('getHeaders', Array)
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(143): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 15:12:07 [error] [exception.CException] CException: CHttpRequest and its behaviors do not have a method or closure named "getHeader". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(50): CComponent->__call('getHeader', Array)
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(144): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 15:12:11 [error] [exception.CException] CException: CHttpRequest and its behaviors do not have a method or closure named "getHeader". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(50): CComponent->__call('getHeader', Array)
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(144): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 16:13:12 [error] [exception.CException] CException: CHttpRequest and its behaviors do not have a method or closure named "getHeader". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(50): CComponent->__call('getHeader', Array)
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(144): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 16:14:08 [error] [exception.CException] CException: CHttpRequest and its behaviors do not have a method or closure named "getRawHeaders". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(49): CComponent->__call('getRawHeaders', Array)
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(146): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 16:14:28 [error] [exception.CHttpException.403] CHttpException: Invalid API token in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:58
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(144): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 16:14:51 [error] [exception.CHttpException.403] CHttpException: Invalid API token in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:58
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(144): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 16:16:42 [error] [php] trim(): Passing null to parameter #1 ($string) of type string is deprecated (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:55)
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(55): trim()
+#1 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(147): DistanceController->actionGetCoordinates()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (55)
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (147)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 16:17:13 [error] [exception.CHttpException.403] CHttpException: Invalid API token in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:63
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(149): DistanceController->actionGetCoordinates('UFC Pici', 'apiKey')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 16:18:32 [error] [php] Undefined variable $apiToken (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:149)
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (149)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 16:20:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "distance/index". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 16:20:50 [error] [php] Undefined variable $apiToken (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:144)
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (144)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 17:32:51 [error] [application] Error: API token is missing.
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (101)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 17:35:09 [error] [exception.ParseError] ParseError: syntax error, unexpected token ";", expecting "function" in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:124
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 17:35:52 [error] [exception.ParseError] ParseError: syntax error, unexpected token ";", expecting "function" in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:124
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(276): CWebApplication->createController('index/')
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 17:41:49 [error] [application] Error: Error fetching data from OpenCage API. Status code: 0
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (101)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 17:41:53 [error] [application] Error: Error fetching data from OpenCage API. Status code: 0
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (101)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 17:44:16 [error] [php] Undefined array key "lat" (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:74)
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (74)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 17:45:31 [error] [application] Error: Error fetching data from OpenCage API. Status code: 0
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (103)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 17:48:01 [error] [php] Undefined array key "results" (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:73)
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 17:49:55 [error] [php] Undefined array key "lat" (C:\Users\jotaf\desafio\protected\controllers\DistanceController.php:80)
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): DistanceController->runAction()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): DistanceController->runActionWithFilters()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): DistanceController->run()
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\Users\jotaf\desafio\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=distance/index
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (80)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 18:04:04 [error] [exception.CException] CException: CHttpRequest and its behaviors do not have a method or closure named "setHeader". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(62): CComponent->__call('setHeader', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:05:42 [error] [exception.CException] CException: Property "CHttpRequest.status" is not defined. in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(120): CComponent->__set('status', 400)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:06:20 [error] [exception.CException] CException: Property "CHttpRequest.status" is not defined. in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(120): CComponent->__set('status', 400)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:08:16 [error] [exception.CException] CException: Property "CHttpRequest.status" is not defined. in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(122): CComponent->__set('status', 400)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:09:59 [error] [exception.CException] CException: DistanceController and its behaviors do not have a method or closure named "getResponse". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(122): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:13:06 [error] [exception.CException] CException: DistanceController and its behaviors do not have a method or closure named "getResponse". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(122): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:13:41 [error] [exception.CException] CException: DistanceController and its behaviors do not have a method or closure named "getResponse". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(122): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:15:03 [error] [application] Error in DistanceController: DistanceController and its behaviors do not have a method or closure named "getResponse".
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (120)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 18:15:03 [error] [application] Stack trace: #0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(109): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (121)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 18:15:03 [error] [exception.CException] CException: DistanceController and its behaviors do not have a method or closure named "getResponse". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(132): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:17:49 [error] [application] Error in DistanceController: DistanceController and its behaviors do not have a method or closure named "getResponse".
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (121)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 18:17:49 [error] [application] Stack trace: #0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(109): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (122)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 18:17:49 [error] [exception.CException] CException: DistanceController and its behaviors do not have a method or closure named "getResponse". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(133): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
+2025/02/05 18:20:29 [error] [application] Error in DistanceController: DistanceController and its behaviors do not have a method or closure named "getResponse".
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (121)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 18:20:29 [error] [application] Stack trace: #0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(109): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+in C:\Users\jotaf\desafio\protected\controllers\DistanceController.php (122)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 18:20:29 [error] [exception.CException] CException: DistanceController and its behaviors do not have a method or closure named "getResponse". in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\DistanceController.php(133): CComponent->__call('getResponse', Array)
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): DistanceController->actionIndex()
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('index')
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('distance/index')
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=distance/index
+HTTP_REFERER=http://localhost:8888/index.php?r=distance/index
+---
