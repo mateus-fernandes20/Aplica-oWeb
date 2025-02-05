@@ -54,7 +54,6 @@ class Passageiro extends CActiveRecord
         } else {
 			$this->status_tempo = new CDbExpression('CURRENT_TIMESTAMP');
 		}
-	
         return parent::beforeSave();
     }
 

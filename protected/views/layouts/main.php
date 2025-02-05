@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	
+
 <div class="container" id="page">
 
 	<div id="header">
@@ -48,6 +48,8 @@
 						array('label'=>'Gerenciar Motoristas', 'url'=>'/index.php?r=motorista/admin'),
 					),
 				),
+				array('label'=>'Solicitar Corrida', 'url'=>('/site/page')),
+				
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
