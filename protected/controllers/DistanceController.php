@@ -39,7 +39,7 @@ class DistanceController extends Controller
             $model->attributes = $_POST['DistanceForm'];
             
             if ($model->validate()) {
-                $apiKey = "5acb4a4ad5924c1b80e9ceb98e909618";
+                $apiKey = "apiKey";
 
                 $coords1 = $this->getCoordinates($model->location1, $apiKey);
                 $coords2 = $this->getCoordinates($model->location2, $apiKey);
