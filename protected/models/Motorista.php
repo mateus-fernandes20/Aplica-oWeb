@@ -4,6 +4,7 @@
  * This is the model class for table "Motorista".
  *
  * The followings are the available columns in table 'Motorista':
+ * @property int $id
  * @property string $nome
  * @property string $nascimento
  * @property string $email
@@ -42,10 +43,10 @@ class Motorista extends CActiveRecord
 			array('stats', 'length', 'max'=>1),
 			array('placa', 'length', 'max'=>8),
 			array('obs', 'length', 'max'=>200),
-			array('status_tempo', 'safe', 'on' => 'insert'),
+			array('status_tempo, id', 'safe', 'on' => 'insert'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('nome, nascimento, email, telefone, stats, status_tempo, obs', 'safe', 'on'=>'search'),
+			array('id, nome, nascimento, email, telefone, stats, status_tempo, obs', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,6 +55,7 @@ class Motorista extends CActiveRecord
         if ($this->isNewRecord) {
 			$this->stats = 'A';
             $this->status_tempo = new CDbExpression('CURRENT_TIMESTAMP');
+			//$this->status_tempo = new CDbExpression('AUTO_INCREMENT');
         } else {
 			$this->status_tempo = new CDbExpression('CURRENT_TIMESTAMP');
 		}
@@ -106,6 +108,7 @@ class Motorista extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('id',$this->id,true);
 		$criteria->compare('nome',$this->nome,true);
 		$criteria->compare('nascimento',$this->nascimento,true);
 		$criteria->compare('email',$this->email,true);

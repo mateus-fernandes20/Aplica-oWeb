@@ -6455,3 +6455,169 @@ Stack trace:
 REQUEST_URI=/index.php?r=motorista/update&id=charlie.brown%40gmail.com
 HTTP_REFERER=http://localhost:8888/index.php?r=motorista/admin
 ---
+2025/02/05 11:56:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AUTO_INCREMENT' in 'field list'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, AUTO_INCREMENT). Bound with :yp0='Charlie Brown', :yp1='1994-02-16', :yp2='charlie.brown@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6='Adoro o Snoopy'.
+in C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 11:56:28 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AUTO_INCREMENT' in 'field list'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, AUTO_INCREMENT). Bound with :yp0='Charlie Brown', :yp1='1994-02-16', :yp2='charlie.brown@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6='Adoro o Snoopy' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): MotoristaController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('motorista/creat...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=motorista/create
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/create
+---
+2025/02/05 11:56:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AUTO_INCREMENT' in 'field list'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, AUTO_INCREMENT). Bound with :yp0='Charlie Brown', :yp1='1994-02-16', :yp2='charlie.brown@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6='Adoro o Snoopy'.
+in C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 11:56:43 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'AUTO_INCREMENT' in 'field list'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, AUTO_INCREMENT). Bound with :yp0='Charlie Brown', :yp1='1994-02-16', :yp2='charlie.brown@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6='Adoro o Snoopy' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): MotoristaController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('motorista/creat...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=motorista/create
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/create
+---
+2025/02/05 11:56:58 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php:157
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php(55): MotoristaController->loadModel('charlie.brown@g...')
+#1 [internal function]: MotoristaController->actionView('charlie.brown@g...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(MotoristaController), Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MotoristaController), Object(ReflectionMethod), Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('motorista/view')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=motorista/view&id=charlie.brown%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/create
+---
+2025/02/05 11:57:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'charlie.brown@gmail.com' for key 'motorista.email'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, CURRENT_TIMESTAMP). Bound with :yp0='Charlie Brown', :yp1='1994-02-16', :yp2='charlie.brown@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6='Adoro o Snoopy'.
+in C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 11:57:22 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'charlie.brown@gmail.com' for key 'motorista.email'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, CURRENT_TIMESTAMP). Bound with :yp0='Charlie Brown', :yp1='1994-02-16', :yp2='charlie.brown@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6='Adoro o Snoopy' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): MotoristaController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('motorista/creat...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=motorista/create
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/create
+---
+2025/02/05 11:58:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ABC-3576' for key 'motorista.placa'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, CURRENT_TIMESTAMP). Bound with :yp0='Antonio Santos', :yp1='1989-02-14', :yp2='antonio.santos@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6=''.
+in C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php (73)
+in C:\Users\jotaf\desafio\index.php (13)
+2025/02/05 11:58:06 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ABC-3576' for key 'motorista.placa'. The SQL statement executed was: INSERT INTO `Motorista` (`nome`, `nascimento`, `email`, `telefone`, `stats`, `placa`, `obs`, `status_tempo`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, CURRENT_TIMESTAMP). Bound with :yp0='Antonio Santos', :yp1='1989-02-14', :yp2='antonio.santos@gmail.com', :yp3='+55-85-999568741', :yp4='A', :yp5='ABC-3576', :yp6='' in C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php(73): CActiveRecord->save()
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(49): MotoristaController->actionCreate()
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('motorista/creat...')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=motorista/create
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/create
+---
+2025/02/05 11:58:18 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php:157
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php(55): MotoristaController->loadModel('antonio.santos@...')
+#1 [internal function]: MotoristaController->actionView('antonio.santos@...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(MotoristaController), Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MotoristaController), Object(ReflectionMethod), Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('motorista/view')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=motorista/view&id=antonio.santos%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista/create
+---
+2025/02/05 12:04:06 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php:157
+Stack trace:
+#0 C:\Users\jotaf\desafio\protected\controllers\MotoristaController.php(55): MotoristaController->loadModel('paulo.dias@gmai...')
+#1 [internal function]: MotoristaController->actionView('paulo.dias@gmai...')
+#2 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CAction.php(115): ReflectionMethod->invokeArgs(Object(MotoristaController), Array)
+#3 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(MotoristaController), Object(ReflectionMethod), Array)
+#4 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\web\CWebApplication.php(141): CWebApplication->runController('motorista/view')
+#14 C:\Users\jotaf\desafio\yii-1.1.28.23448d\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\Users\jotaf\desafio\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=motorista/view&id=paulo.dias%40gmail.com
+HTTP_REFERER=http://localhost:8888/index.php?r=motorista
+---

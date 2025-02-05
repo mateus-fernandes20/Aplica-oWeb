@@ -12,6 +12,11 @@
 )); ?>
 
 	<div class="row">
+		<?php echo $form->label($model,'id'); ?>
+		<?php echo $form->textField($model,'id'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'nome'); ?>
 		<?php echo $form->textField($model,'nome',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
