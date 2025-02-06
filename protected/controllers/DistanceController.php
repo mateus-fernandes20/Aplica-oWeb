@@ -127,13 +127,6 @@ class DistanceController extends Controller
 
             $tbl_origem = isset($data['origem']['endereco']) ? $data['origem']['endereco'] : null;
             $tbl_destino = isset($data['destino']['endereco']) ? $data['destino']['endereco'] : null;
-            /*$passageiro = Yii::app()->db->createCommand()
-                ->select('email')
-                ->from('passageiro')
-                ->where('id=:id', array(':id' => $passageiroId))
-                ->queryRow();
-
-            $emailPassageiro = $passageiro ? $passageiro['email'] : null; // Ensure email is fetched*/
 
             Yii::app()->db->createCommand()->insert('Corrida', [
                 'motorista' => $motorista['id'],
