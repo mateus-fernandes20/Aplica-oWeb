@@ -122,10 +122,42 @@ class CorridaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Corrida');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+		// Check if both start_time and end_time are missing or empty
+		if (empty($_GET['start_time']) || empty($_GET['end_time'])) {
+			// Set error message
+			Yii::app()->user->setFlash('error', 'Please provide both start time and end time.');
+		}
+	
+		$dataProvider = null;
+		$errorMessage = null; // Initialize variable for error message
+	
+		try {
+			// Fetch filtered results
+			$criteria = new CDbCriteria();
+			$criteria->order = "stats = 'A' DESC, inicio DESC"; // Order by stats = 'A' first, then by inicio DESC
+	
+			// Only apply time filtering if both parameters are provided
+			if (isset($_GET['start_time']) && isset($_GET['end_time']) && !empty($_GET['start_time']) && !empty($_GET['end_time'])) {
+				$criteria->addCondition("inicio >= :start_time AND inicio <= :end_time");
+				$criteria->params = [
+					':start_time' => $_GET['start_time'],
+					':end_time' => $_GET['end_time'],
+				];
+			}
+	
+			// Query the data provider
+			$dataProvider = new CActiveDataProvider('Corrida', ['criteria' => $criteria]);
+	
+		} catch (Exception $e) {
+			// Catch any exception and display the error message
+			$errorMessage = "An error occurred while fetching the data: " . $e->getMessage();
+		}
+	
+		// Render the view, passing error message if exists
+		$this->render('index', [
+			'dataProvider' => $dataProvider,
+			'errorMessage' => $errorMessage,
+		]);
 	}
 
 	/**

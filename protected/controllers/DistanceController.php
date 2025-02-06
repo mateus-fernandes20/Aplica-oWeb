@@ -121,35 +121,36 @@ class DistanceController extends Controller
 
             if ($motorista === null) {
                 // If no active motorista is found, return an error
+
+                Yii::app()->db->createCommand()->insert('Corrida', [
+                    'passageiro' => $emailPassageiro,
+                    'origem' => $tbl_origem,
+                    'destino' => $tbl_destino,
+                    'inicio' => new CDbExpression('CURRENT_TIMESTAMP'),
+                    'fim' => new CDbExpression('CURRENT_TIMESTAMP'),
+                    'stats' => 'N',
+                    'previsao' => $formattedTime,
+                    'tarifa' => $totalPrice,
+                ]);
+
                 echo json_encode([
                     'sucesso' => false,
                     'message' => 'Nenhum motorista disponível.',
                 ]);
 
+                Yii::app()->end();
+            } else{
                 Yii::app()->db->createCommand()->insert('Corrida', [
                     'motorista' => $motorista['id'],
                     'passageiro' => $emailPassageiro,
                     'origem' => $tbl_origem,
                     'destino' => $tbl_destino,
                     'inicio' => new CDbExpression('CURRENT_TIMESTAMP'),
-                    'stats' => 'N',
+                    'stats' => 'A',
                     'previsao' => $formattedTime,
                     'tarifa' => $totalPrice,
                 ]);
-
-                Yii::app()->end();
             }
-
-            Yii::app()->db->createCommand()->insert('Corrida', [
-                'motorista' => $motorista['id'],
-                'passageiro' => $emailPassageiro,
-                'origem' => $tbl_origem,
-                'destino' => $tbl_destino,
-                'inicio' => new CDbExpression('CURRENT_TIMESTAMP'),
-                'stats' => 'A',
-                'previsao' => $formattedTime,
-                'tarifa' => $totalPrice,
-            ]);
 
             // Prepare success response
             $response = [

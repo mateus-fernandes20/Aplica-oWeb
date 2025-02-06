@@ -1,0 +1,10 @@
+{
+	"motorista": {
+		"id": 1
+	},
+	"intervalo": {
+		"inicio": "2025-02-06",
+		"fim": "2025-02-06"
+	},
+	"periodicidade": "M"
+}
