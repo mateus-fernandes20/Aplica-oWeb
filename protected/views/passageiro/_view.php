@@ -1,6 +1,6 @@
 <?php
 /* @var $this PassageiroController */
-/* @var $data Passageiro */
+/* @var $model Passageiro */
 ?>
 
 <div class="view">
@@ -32,6 +32,5 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('obs')); ?>:</b>
 	<?php echo CHtml::encode($data->obs); ?>
 	<br />
-
 
 </div>

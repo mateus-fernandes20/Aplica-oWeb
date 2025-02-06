@@ -103,15 +103,6 @@ class DistanceController extends Controller
 
             $motorista = Motorista::model()->find('Stats = :stats', ['stats' => 'A']);
 
-            if ($motorista === null) {
-                // If no active motorista is found, return an error
-                echo json_encode([
-                    'sucesso' => false,
-                    'message' => 'Nenhum motorista disponível.',
-                ]);
-                Yii::app()->end();
-            }
-
             // Calculate the arrival time
             $currentTime = new DateTime();
             $currentTime->modify("+$estimatedTimeInMinutes minutes");
@@ -127,6 +118,27 @@ class DistanceController extends Controller
 
             $tbl_origem = isset($data['origem']['endereco']) ? $data['origem']['endereco'] : null;
             $tbl_destino = isset($data['destino']['endereco']) ? $data['destino']['endereco'] : null;
+
+            if ($motorista === null) {
+                // If no active motorista is found, return an error
+                echo json_encode([
+                    'sucesso' => false,
+                    'message' => 'Nenhum motorista disponível.',
+                ]);
+
+                Yii::app()->db->createCommand()->insert('Corrida', [
+                    'motorista' => $motorista['id'],
+                    'passageiro' => $emailPassageiro,
+                    'origem' => $tbl_origem,
+                    'destino' => $tbl_destino,
+                    'inicio' => new CDbExpression('CURRENT_TIMESTAMP'),
+                    'stats' => 'N',
+                    'previsao' => $formattedTime,
+                    'tarifa' => $totalPrice,
+                ]);
+
+                Yii::app()->end();
+            }
 
             Yii::app()->db->createCommand()->insert('Corrida', [
                 'motorista' => $motorista['id'],

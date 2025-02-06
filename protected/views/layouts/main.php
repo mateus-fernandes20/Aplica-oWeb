@@ -48,7 +48,14 @@
 						array('label'=>'Gerenciar Motoristas', 'url'=>'/index.php?r=motorista/admin'),
 					),
 				),
-				array('label'=>'Solicitar Corrida', 'url'=>'/index.php?r=distance/index'),
+				array(
+					'label'=>'Corridas', 
+					'url'=> '#',
+					'items'=>array(
+						array('label'=>'Listar Corridas', 'url'=>'/index.php?r=corrida'),
+						array('label'=>'Solicitar Corrida', 'url'=>'/index.php?r=distance/index'),
+					),
+				),
 
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),

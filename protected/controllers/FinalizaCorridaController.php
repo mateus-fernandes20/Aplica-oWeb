@@ -4,14 +4,14 @@ class FinalizaCorridaController extends Controller
     public function actionIndex()
     {
         $filePath = Yii::getPathOfAlias('application') . '/config/finaliza.json';
-        
+
         if (!file_exists($filePath)) {
             echo json_encode(["sucesso" => false, "message" => "finaliza.json file not found."]);
             Yii::app()->end();
         }
 
         $jsonData = json_decode(file_get_contents($filePath), true);
-        
+
         if (json_last_error() !== JSON_ERROR_NONE) {
             echo json_encode(["sucesso" => false, "message" => "Invalid JSON format: " . json_last_error_msg()]);
             Yii::app()->end();
@@ -26,7 +26,7 @@ class FinalizaCorridaController extends Controller
             Yii::app()->end();
         }
 
-        // Find the corrida record
+        // Fetch the corrida record
         $corrida = Yii::app()->db->createCommand()
             ->select('*')
             ->from('corrida')
@@ -35,6 +35,12 @@ class FinalizaCorridaController extends Controller
 
         if (!$corrida) {
             echo json_encode(["sucesso" => false, "message" => "Corrida not found."]);
+            Yii::app()->end();
+        }
+
+        // Verify if the motorista_id in corrida matches the provided motorista_id
+        if ($corrida['motorista'] != $motoristaId) {
+            echo json_encode(["sucesso" => false, "message" => "Motorista ID does not match the corrida."]);
             Yii::app()->end();
         }
 
@@ -50,11 +56,14 @@ class FinalizaCorridaController extends Controller
             Yii::app()->end();
         }
 
-        // Update 'fim' field in 'corrida' table with current timestamp
+        // Update 'fim' field in 'corrida' table with current timestamp and set status to 'F'
         Yii::app()->db->createCommand()
-            ->update('corrida', ['fim' => new CDbExpression('NOW()')], 'id = :id', [':id' => $corridaId]);
+            ->update('corrida', [
+                'fim' => new CDbExpression('NOW()'),
+                'stats' => 'F'
+            ], 'id = :id', [':id' => $corridaId]);
 
-        // Increment 'corrida' count in 'motorista' table
+        // Increment 'corridas' count in 'motorista' table
         Yii::app()->db->createCommand()
             ->update('motorista', ['corridas' => new CDbExpression('corridas + 1')], 'id = :id', [':id' => $motoristaId]);
 
