@@ -39,9 +39,6 @@ class MotoristaController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('admin'),
 			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
 		);
 	}
 
@@ -170,4 +167,28 @@ class MotoristaController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	public function actionUpdateStats($email)
+    {
+        // Find the passageiro by email
+        $model = Motorista::model()->findByAttributes(array('email' => $email));
+
+        // Check if the passageiro exists
+        if ($model === null) {
+            throw new CHttpException(404, 'The requested Motorista does not exist.');
+        }
+
+        // Toggle the 'stats' field (active to inactive, or vice versa)
+        $model->stats = ($model->stats == 'A') ? 'I' : 'A';
+
+        // Save the updated 'stats' field
+        if ($model->save()) {
+            // Redirect back to the index or list page after update
+            $this->redirect(array('index'));
+        } else {
+            // If save fails, display an error message
+            Yii::app()->user->setFlash('error', 'Error updating stats.');
+            $this->redirect(array('index'));
+        }
+    }
 }

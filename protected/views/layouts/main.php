@@ -37,6 +37,7 @@
 						array('label'=>'Listar Passageiros', 'url'=>'/index.php?r=passageiro'),
 						array('label'=>'Criar Passageiros', 'url'=>'/index.php?r=passageiro/create'),
 						array('label'=>'Gerenciar Passageiros', 'url'=>'/index.php?r=passageiro/admin'),
+						array('label'=>'Status Passageiros', 'url'=>'/index.php?r=passageiro/status'),
 					),
 				),
 				array(

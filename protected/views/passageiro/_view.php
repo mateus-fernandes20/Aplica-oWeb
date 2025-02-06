@@ -22,7 +22,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('stats')); ?>:</b>
-	<?php echo CHtml::encode($data->stats); ?>
+	<?php echo CHtml::link(CHtml::encode($data->stats), array('passageiro/updateStats', 'email' => $data->email)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('status_tempo')); ?>:</b>

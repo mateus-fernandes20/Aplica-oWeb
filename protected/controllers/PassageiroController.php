@@ -39,9 +39,14 @@ class PassageiroController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('admin'),
 			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+			array('allow',  // allow all users to view and update stats
+                'actions'=>array('index', 'updateStats'),
+                'users'=>array('@'),  // Allow authenticated users only
+            ),
+			array('allow', // allow admin user to perform any action
+            'actions'=>array('updateStats'),
+            'users'=>array('admin'),  // Only admin users
+        	),
 		);
 	}
 
@@ -123,6 +128,9 @@ class PassageiroController extends Controller
 	 */
 	public function actionIndex()
 	{
+		if (Yii::app()->user->isGuest) {
+            $this->redirect(array('site/login')); // Redirect to the login page if not logged in
+        }
 		$dataProvider=new CActiveDataProvider('Passageiro');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -171,4 +179,28 @@ class PassageiroController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	public function actionUpdateStats($email)
+    {
+        // Find the passageiro by email
+        $model = Passageiro::model()->findByAttributes(array('email' => $email));
+
+        // Check if the passageiro exists
+        if ($model === null) {
+            throw new CHttpException(404, 'The requested passageiro does not exist.');
+        }
+
+        // Toggle the 'stats' field (active to inactive, or vice versa)
+        $model->stats = ($model->stats == 'A') ? 'I' : 'A';
+
+        // Save the updated 'stats' field
+        if ($model->save()) {
+            // Redirect back to the index or list page after update
+            $this->redirect(array('index'));
+        } else {
+            // If save fails, display an error message
+            Yii::app()->user->setFlash('error', 'Error updating stats.');
+            $this->redirect(array('index'));
+        }
+    }
 }
