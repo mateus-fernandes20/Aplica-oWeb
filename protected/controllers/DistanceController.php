@@ -118,13 +118,43 @@ class DistanceController extends Controller
             $currentTime->modify("-180 minutes");  // Subtract 180 minutes
             $formattedTime = $currentTime->format('Y-m-d H:i');
 
+            $distanceCost = $distance * 2.00; // R$ 2.00 per km
+            $timeCost = $estimatedTimeInMinutes * 0.50; // R$ 0.50 per minute
+            $basePrice = 5.00; // Fixed base price
+            $totalPrice = $distanceCost + $timeCost + $basePrice;
+
+            $emailPassageiro = isset($data['passageiro']['id']) ? trim($data['passageiro']['id']) : null;
+
+            $tbl_origem = isset($data['origem']['endereco']) ? $data['origem']['endereco'] : null;
+            $tbl_destino = isset($data['destino']['endereco']) ? $data['destino']['endereco'] : null;
+            /*$passageiro = Yii::app()->db->createCommand()
+                ->select('email')
+                ->from('passageiro')
+                ->where('id=:id', array(':id' => $passageiroId))
+                ->queryRow();
+
+            $emailPassageiro = $passageiro ? $passageiro['email'] : null; // Ensure email is fetched*/
+
+            Yii::app()->db->createCommand()->insert('Corrida', [
+                'motorista' => $motorista['id'],
+                'passageiro' => $emailPassageiro,
+                'origem' => $tbl_origem,
+                'destino' => $tbl_destino,
+                'inicio' => new CDbExpression('CURRENT_TIMESTAMP'),
+                'stats' => 'A',
+                'previsao' => $formattedTime,
+                'tarifa' => $totalPrice,
+            ]);
+
             // Prepare success response
             $response = [
                 'sucesso' => true,
                 'corrida' => [
-                    'id' => 456,  // Example ID
+                    'id' => Yii::app()->db->lastInsertID,
                     'previsao_chegada_destino' => $formattedTime,
-                    'previsao_tempo' => $estimatedTimeInMinutes
+                    'previsao_tempo' => $estimatedTimeInMinutes,
+                    'preco' => number_format($totalPrice, 2, ',', '.'),
+                    //'teste' => $emailPassageiro,
                 ],
                 'motorista' => [
                     'nome' => $motorista->nome,
