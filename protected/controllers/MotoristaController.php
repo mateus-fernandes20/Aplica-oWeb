@@ -191,4 +191,99 @@ class MotoristaController extends Controller
             $this->redirect(array('index'));
         }
     }
+
+
+	public function actionEstatisticas()
+    {
+        // Read motorista.json file
+        $jsonFile = Yii::getPathOfAlias('application.config') . '/motorista.json';
+        $config = json_decode(file_get_contents($jsonFile), true);
+
+        // Extract motorista ID, intervalo, and periodicidade
+        $motoristaId = $config['motorista']['id'] ?? null;
+        $startDate = $config['intervalo']['inicio'] ?? null;
+        $endDate = $config['intervalo']['fim'] ?? null;
+        $periodicidade = $config['periodicidade'] ?? 'M'; // Default to 'M'
+
+        // Validate parameters
+        if (!$motoristaId || !$startDate || !$endDate) {
+            echo json_encode(["error" => "Invalid input parameters"]);
+            Yii::app()->end();
+        }
+		$motorista = Motorista::model()->findByPk($motoristaId);
+
+        // Fetch statistics from database
+        $lista = $this->getStatistics($motoristaId, $startDate, $endDate, $periodicidade);
+
+        // Prepare JSON response
+        $response = [
+            "motorista" => [
+                "id" => $motoristaId,
+                "nome" => $motorista->nome // This should come from the database if needed
+            ],
+            "periodicidade" => $periodicidade,
+            "lista" => $lista
+        ];
+
+        // Return JSON response
+        header('Content-Type: application/json');
+        echo json_encode($response);
+        Yii::app()->end();
+    }
+
+    private function getStatistics($motoristaId, $startDate, $endDate, $periodicidade)
+{
+    // Determine grouping based on periodicidade
+    $groupBy = match ($periodicidade) {
+        "D" => "DATE(c.inicio)",  // Group by Day
+        "S" => "YEARWEEK(c.inicio, 1)", // Group by Week (ISO Week)
+        "M" => "DATE_FORMAT(c.inicio, '%Y-%m')" // Group by Month
+    };
+
+    // Query to fetch all occurrences of the motorista in the given period
+    $rows = Yii::app()->db->createCommand()
+        ->select("
+            MIN(c.inicio) AS intervalo_inicio, 
+            MAX(c.fim) AS intervalo_fim, 
+            COUNT(c.motorista) AS quantidade, 
+            COALESCE(SUM(c.tarifa), 0) AS faturamento,
+			COALESCE(SUM(TIMESTAMPDIFF(SECOND, c.inicio, c.fim)), 0) AS duracao
+        ")
+        ->from('corrida c')
+        ->where('c.motorista = :id AND c.inicio BETWEEN :start AND :end', [
+            ':id' => $motoristaId,
+            ':start' => $startDate . ' 00:00:00',
+            ':end' => $endDate . ' 23:59:59'
+        ])
+        ->group($groupBy)
+        ->queryAll();
+
+    // Format response
+    $lista = [];
+    foreach ($rows as $row) {
+		// Calculate hours, minutes, and seconds from the total duration in seconds
+        $totalSeconds = (int)($row["duracao"] ?? 0);
+        $hours = floor($totalSeconds / 3600);
+        $minutes = floor(($totalSeconds % 3600) / 60);
+        $seconds = $totalSeconds % 60;
+
+        // Format the duration as hh:mm:ss
+        $formattedDuration = sprintf("%02d:%02d:%02d", $hours, $minutes, $seconds);
+
+        $lista[] = [
+            "intervalo" => [
+                "inicio" => $row["intervalo_inicio"] ?? $startDate,
+                "fim" => $row["intervalo_fim"] ?? $endDate,
+            ],
+            "estatistica" => [
+                "quantidade" => (int)($row["quantidade"] ?? 0),
+                "faturamento" => (float)($row["faturamento"] ?? 0.0),
+				"duracao" => $formattedDuration,
+            ]
+        ];
+    }
+
+    return $lista;
+}
+
 }
