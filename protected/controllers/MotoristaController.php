@@ -194,42 +194,71 @@ class MotoristaController extends Controller
 
 
 	public function actionEstatisticas()
-    {
-        // Read motorista.json file
-        $jsonFile = Yii::getPathOfAlias('application.config') . '/motorista.json';
-        $config = json_decode(file_get_contents($jsonFile), true);
+{
+    // Read motorista.json file
+    $jsonFile = Yii::getPathOfAlias('application.config') . '/motorista.json';
+    $config = json_decode(file_get_contents($jsonFile), true);
 
-        // Extract motorista ID, intervalo, and periodicidade
-        $motoristaId = $config['motorista']['id'] ?? null;
-        $startDate = $config['intervalo']['inicio'] ?? null;
-        $endDate = $config['intervalo']['fim'] ?? null;
-        $periodicidade = $config['periodicidade'] ?? 'M'; // Default to 'M'
+    // Extract motorista ID, intervalo, and periodicidade
+    $motoristaId = $config['motorista']['id'] ?? null;
+    $startDate = $config['intervalo']['inicio'] ?? null;
+    $endDate = $config['intervalo']['fim'] ?? null;
+    $periodicidade = $config['periodicidade'] ?? 'M'; // Default to 'M'
 
-        // Validate parameters
-        if (!$motoristaId || !$startDate || !$endDate) {
-            echo json_encode(["error" => "Invalid input parameters"]);
-            Yii::app()->end();
-        }
-		$motorista = Motorista::model()->findByPk($motoristaId);
-
-        // Fetch statistics from database
-        $lista = $this->getStatistics($motoristaId, $startDate, $endDate, $periodicidade);
-
-        // Prepare JSON response
-        $response = [
-            "motorista" => [
-                "id" => $motoristaId,
-                "nome" => $motorista->nome // This should come from the database if needed
-            ],
-            "periodicidade" => $periodicidade,
-            "lista" => $lista
-        ];
-
-        // Return JSON response
-        header('Content-Type: application/json');
-        echo json_encode($response);
+    // Validate parameters
+    if (!$motoristaId || !$startDate || !$endDate) {
+        echo json_encode(["error" => "Invalid input parameters"]);
         Yii::app()->end();
     }
+
+	$today = new DateTime();
+    // Check if the date range exceeds 180 days
+    $startDateTime = new DateTime($startDate);
+    $endDateTime = new DateTime($endDate);
+    $interval = $startDateTime->diff($endDateTime);
+
+	if ($startDateTime > $endDateTime) {
+        echo json_encode(["error" => "A data inicial nao deve ser maior que a final."]);
+        Yii::app()->end();
+    }
+
+    // If startDate or endDate is in the future, set them to today
+    if ($startDateTime > $today) {
+        $startDate = $today->format('Y-m-d');
+    }
+    if ($endDateTime > $today) {
+        $endDate = $today->format('Y-m-d');
+    }
+
+    if ($interval->days > 180) {
+        echo json_encode(["error" => "Periodo deve ter no máximo 180 dias."]);
+        Yii::app()->end();
+    }
+
+    $motorista = Motorista::model()->findByPk($motoristaId);
+	if ($motorista === null) {
+		echo json_encode(["error" => "Motorista nao existe."]);
+		Yii::app()->end();
+	}
+
+    // Fetch statistics from the database
+    $lista = $this->getStatistics($motoristaId, $startDate, $endDate, $periodicidade);
+
+    // Prepare JSON response
+    $response = [
+        "motorista" => [
+            "id" => $motoristaId,
+            "nome" => $motorista->nome // This should come from the database if needed
+        ],
+        "periodicidade" => $periodicidade,
+        "lista" => $lista
+    ];
+
+    // Return JSON response
+    header('Content-Type: application/json');
+    echo json_encode($response);
+    Yii::app()->end();
+}
 
     private function getStatistics($motoristaId, $startDate, $endDate, $periodicidade)
 {
